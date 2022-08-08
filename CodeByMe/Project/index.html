@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Gym with Me </title>
+    <style>
+        body {
+            background-image: url('/Gym.png');
+        }
+
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            /* width: 710px; */
+            margin: 10px;
+            padding: 9px;
+        }
+
+        .mid {
+            /* border: 2px solid rgb(0, 255, 13); */
+            display: block;
+            position: absolute;
+            left: 442px;
+            width: 710px;
+            margin: 20px;
+            font-size: 15px;
+            padding: 9px;
+        }
+
+        .right {
+            /* border: 2px solid rgb(38, 0, 255); */
+            display: inline-block;
+            position: absolute;
+            right: 23px;
+            margin: 20px;
+            font-size: 20px;
+            padding: 9px;
+        }
+
+        .mid ul li {
+            display: inline-block;
+            padding: 2px;
+            margin: 3px;
+            /* font-size: 2px; */
+        }
+
+        .mid ul li a {
+            text-decoration: none;
+            color: rgb(1, 7, 0);
+            margin: 22px;
+            padding: 10px;
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Helvetica, sans-serif;
+            border-radius: 8px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .mid ul li a:hover {
+            color: rgb(255, 249, 249);
+            background-color: rgb(17, 14, 19);
+            font-size: 20px;
+        }
+
+        .btn {
+            padding: 2px;
+        }
+
+        .btn button {
+            margin: 2px;
+            height: 34px;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 9px;
+            border-radius: 9px;
+            text-align: center;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+
+        .btn button:hover {
+            color: rgb(255, 249, 249);
+            background-color: rgb(17, 14, 19);
+        }
+
+        .left h2 {
+            font-weight: bold;
+            color: rgb(2, 10, 0);
+            padding: 8px;
+            border-radius: 9px;
+            font-size: 29px;
+
+        }
+
+        .left h2:hover {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            /* text-decoration: underline; */
+        }
+
+        .main form {
+            /* margin: 34px; */
+            position: absolute;
+            top: 219px;
+            left: 120px;
+            border: 2px solid rgb(255, 253, 253);
+            padding: 25px;
+            margin: 22pxpx;
+        }
+
+        .main form input{
+            height: 39px;
+            width: 384px;
+            margin: 3px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 19px;
+            color: black;
+            border: none;
+            cursor: pointer;
+            background-color: rgb(207, 241, 207);
+            border-radius: 7px;
+        }
+        .main form input:hover{
+            background-color: lightsalmon;
+            color: rgb(10, 8, 8);
+        }
+        .main form button{
+            height: 39px;
+            width: 388px;
+            margin-top: 3px;
+            text-align: center;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 19px;
+            background-color: darkcyan;
+            border: none;
+            border-radius: 7px;
+        }
+        .main form button:hover{
+            background-color: rgb(6, 87, 19);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <h2>WELCOME TO FITNESS</h2>
+        </div>
+        <div class="mid">
+            <ul>
+                <li><a href="#">Home</a> </li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Tip</a></li>
+                <li><a href="#">Forum</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="btn">
+                <button>Email us</button>
+                <button>Get info</button>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="main">
+        <form action="" class="form">
+            <!-- hello -->
+            <div class="form-name">
+                <input type="text" placeholder=" Enter Name">
+            </div>
+            <div class="form-name">
+                <input type="text" placeholder=" Address ">
+            </div>
+            <div class="form-name">
+                <input type="text" placeholder=" Email ">
+            </div>
+            <div class="form-name">
+                <input type="text" placeholder=" Phone Number ">
+            </div>
+            <div class="form-name">
+                <button>SUBMIT</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

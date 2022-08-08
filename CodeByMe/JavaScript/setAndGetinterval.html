@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get interval and set Interval</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to the Programming ...</h1>
+        <h1>Time is => </h1><h2 id="time"></h2>
+    </div>
+    <script>
+        console.log("Hello ");
+        const greet = (name) => {
+            console.log(`Hello ${name} welcome to the Programming`);
+        }
+        // setTimeout(greet, 2000, "Ranjana");
+        // clearTimeout(greet);
+        // interval = setInterval(greet, 2000, "Ranjana");
+        // clearInterval(interval);
+        const Displaytime = () => {
+            time = new Date().toLocaleTimeString();
+            document.getElementById('time').innerHTML= time;
+        };
+        setInterval(Displaytime , 1000);
+    </script>
+</body>
+
+</html>

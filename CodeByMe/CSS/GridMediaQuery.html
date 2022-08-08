@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Media queries useing CSS . </title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+
+        }
+
+        .bts {
+            border: 1px solid grey;
+            padding: 23px;
+            background-color: white;
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        @media only screen and (max-width:300px) {
+            body {
+                background-color: rgb(224, 50, 59);
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+            span {
+                display: block;
+                text-align: center;
+                justify-content: center
+            }
+        }
+
+        @media only screen and (min-width:300px) and (max-width:500px) {
+            body {
+                background-color: rgb(31, 97, 4);
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'footer footer footer footer';
+            }
+
+            aside {
+                display: none;
+            }
+        }
+
+        @media only screen and (min-width:500px) and (max-width:800px) {
+            body {
+                background-color: rgb(46, 8, 90);
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+        }
+
+        @media only screen and (min-width:800px) {
+            body {
+                background-color: pink;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="bts">
+            <span>home</span>
+            <span>About us</span>
+            <span>Contact us </span>
+            <span>Visit Us </span>
+        </div>
+        <section id="section" class="bts">
+            <h2>Learn Css </h2>
+        </section>
+        <aside id="aside" class="bts">
+            <h1>More About us </h1>
+        </aside>
+        <footer class="bts"></footer>
+    </div>
+</body>
+
+</html>

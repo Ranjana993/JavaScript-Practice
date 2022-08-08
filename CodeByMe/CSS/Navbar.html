@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        #navbar {
+            background-color: rgb(4, 88, 39);
+            height: 50px;
+
+            position: fixed;
+            width: 1528px;
+
+        }
+
+        ul li {
+            display: inline-block;
+            /* margin-top: 20px; */
+            /* margin: 20px; */
+            text-align: center;
+            padding: 20px;
+        }
+
+        ul li a {
+            list-style: none;
+            text-decoration: none;
+            font-size: 20px;
+            color: red;
+            font-weight: bold;
+        }
+
+        ul li a:hover {
+            color: white;
+        }
+
+        #search {
+            float: right;
+            margin: 10px;
+            margin-right: 80px;
+            padding: 3px;
+            border: none;
+            background-color: transparent;
+        }
+
+        #search input {
+            padding: 3px;
+            margin: 2px;
+            border: none;
+            background-color: whitesmoke;
+        }
+
+        #img {
+            margin: 2px;
+            height: 1215px;
+            width: 100%;
+        }
+
+        #form {
+            top: 20px;
+            height: 700px;
+            background-color: rgb(187, 235, 187);
+            width: 1450px;
+            margin: auto;
+            padding: 40px;
+            text-align: center;
+        }
+        #forms{
+            border: 2px solid green;
+            height: 300px;
+            width: 500px;
+            margin:50px auto;
+            font-size: 20px;
+            /* margin-top: 50px; */
+            padding: 40px;
+            outline: none;
+            background-color: rgb(123, 185, 123);
+        }
+        #forms input{
+        border: none;
+        background: transparent;
+        border-bottom: 3px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Career</a></li>
+            <div id="search">
+                <input type="text" placeholder="search">
+            </div>
+
+        </ul>
+
+    </header><br>
+    <main>
+        <div id="img">
+            <!-- <img src="Images.jpg" alt=""> -->
+            <div id="form">
+                <form action="" id="forms">
+                    
+                    First Name : <input type="text" name="myFName"><br>
+                    Last Name : <input type="text" name="myLName"><br>
+                    Email here : <input type="text" name="Email"><br>
+                    Contact me : <input type="text" name="myContact">
+                </form>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>

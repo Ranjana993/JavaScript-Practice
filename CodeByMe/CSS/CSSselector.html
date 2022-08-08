@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTOR </title>
+    <style>
+        input {
+            display: block;
+        }
+
+        .container {
+            display: block;
+            margin: auto;
+            width: 230px;
+            padding-top: 4px;
+        }
+
+        input[type='text'] {
+            background-color: greenyellow;
+            padding: 10px;
+            border: none;
+        }
+
+        input[type='number'] {
+            background-color: rgb(204, 201, 35);
+            padding: 10px;
+            border: none;
+        }
+
+        a[target] {
+            color: red;
+            font-weight: bold;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        /* li:nth-child(2n+2){
+            color: red;
+        }
+        li:nth-child(3n+0){
+        color: rgb(39, 196, 0);
+        } */
+        li:nth-child(odd){
+            color: rgb(11, 192, 50);
+        }
+        li:nth-child(even){
+        color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="http://google.com" target="_blank">Go to google </a>
+        <a href="http://google.com">Go to Facebook </a>
+        <form action="" class="form">
+            <input type="text" - placeholder="Enter your name">
+            <input type="email" placeholder="Enter your email">
+            <input type="number" placeholder="Enter your number ">
+        </form>
+        <ul>
+            <li class="item">Item 1 </li>
+            <li class="item">Item 2</li>
+            <li class="item">Item 3</li>
+            <li class="item">Item 4</li>
+            <li class="item">Item 5</li>
+            <li class="item">Item 6</li>
+            <li class="item">Item 7</li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after selector . </title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            background : url('https://source.unsplash.com/user/erondu/1600x900') ;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        header::before{
+            background: url('https://source.unsplash.com/user/erondu/1600x900') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            opacity: 0.05;
+
+        }
+        header{
+            display: flex;
+            flex-direction: column;
+        }
+        .navigation{
+            font-size: 23px;
+            display: flex;
+        }
+        li{
+            list-style: none;
+            padding: 34px;
+            cursor: pointer;
+        }
+        section{
+            height: 400px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            margin: 34px 34px;
+            padding: 3px;
+            flex-direction: column;
+        }
+        section p {
+            text-align: center;
+            padding: 4px;
+            margin: 2rem;
+            font-size: 1.5rem;
+        }
+        section h2 {
+            font-size: 4rem;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About Us</li>
+                <li class="item">Contact </li>
+                <li class="item">Services</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>WELCOME TO THE CODING . </h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad dicta dolore asperiores, neque excepturi architecto repellat corporis laudantium aperiam deleniti nulla exercitationem ipsum libero eaque. Quibusdam itaque autem magni odio?</p>
+    </section>
+    
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout in CSS</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 0.2rem;
+            grid-template-areas: 'navbar navbar navbar navbar''section section section aside''footer footer footer footer';
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        .item {
+            background-color: coral;
+            border: 2px solid green;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="item">Home About us Contact us Career </div>
+        <div id="section" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas molestiae id
+            quos laborum saepe? Perferendis dicta quia possimus maxime sit, perspiciatis cumque earum repellendus
+            maiores provident, nihil esse voluptates ut!</div>
+        <div id="aside" class="item">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio distinctio, iure ducimus commodi aspernatur
+            exercitationem soluta dolorem illo, tenetur eaque nobis, impedit velit voluptas at quam eius nam animi unde!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sapiente molestiae officiis qui ducimus sint
+            sit pariatur accusamus tenetur aliquam, iusto excepturi eos magnam est cum sed nostrum vel consectetur?
+        </div>
+        <footer class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam consequuntur qui vel sequi
+            nobis atque ratione animi quibusdam voluptatem quisquam doloremque voluptas molestiae, assumenda quasi eos
+            ad ab? Odio, vitae.</footer>
+    </div>
+</body>
+
+</html>

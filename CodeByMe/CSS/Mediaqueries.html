@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries </title>
+    <style>
+        .container {
+            height: 90vh;
+            width: 97vw;
+            border: 4px solid green;
+            font-size: 20px;
+            /* display: flex; */
+
+        }
+
+        .item {
+            height: 190px;
+            width: 190px;
+            background: rgb(180, 85, 85);
+            color: white;
+            margin: 18px;
+            padding: 4px;
+            text-align: center;
+            display: none;
+            flex-wrap: wrap;
+        }
+
+        @media only screen and (max-width:200px) {
+            #item1 {
+                border: 5px solid red;
+                background: blue;
+                color: white;
+                display: block;
+            }
+        }
+
+        @media only screen and (max-width:500px) {
+            #item2 {
+                border: 5px solid rgb(219, 199, 199);
+                background: rgb(168, 168, 230);
+                color: white;
+                display: block;
+            }
+        }
+
+        @media only screen and (max-width:200px) {
+            #item3 {
+                border: 5px solid rgb(218, 160, 160);
+                background: rgb(105, 105, 223);
+                color: white;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is a Heading . </h1>
+    <div class="container">
+        <div class="item" id="item1">First Item</div>
+        <div class="item" id="item2">Second Item</div>
+        <div class="item" id="item3">Third Item</div>
+        <div class="item" id="item4">Fourth Item</div>
+    </div>
+</body>
+
+</html>

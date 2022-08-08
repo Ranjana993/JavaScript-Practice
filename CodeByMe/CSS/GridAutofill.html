@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid autofill </title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            /* grid-template-columns: 112px 112px 112px; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            /* justify-content: center;
+            align-items: center; */
+            grid-template-columns: repeat(auto-fit, minmax(200px , 1fr));
+        }
+
+        .cox {
+            background-color: cadetblue;
+            border: 1px solid rgb(216, 46, 16);
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cox">Item1</div>
+        <div class="cox">Item2</div>
+        <div class="cox">Item3</div>
+        <div class="cox">Item4</div>
+        <div class="cox">Item5</div>
+        <div class="cox">Item6</div>
+        <div class="cox">Item7</div>
+        <div class="cox">Item8</div>
+        <div class="cox">Item9</div>
+        <div class="cox">Item10</div>
+        <div class="cox">Item11</div>
+        <div class="cox">Item12</div>
+    </div>
+</body>
+
+</html>

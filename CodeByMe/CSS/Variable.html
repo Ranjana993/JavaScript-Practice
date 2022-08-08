@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variablr Declaration</title>
+    <style>
+        :root {
+            --box-color: purple;
+            --primary-color: green;
+            --secondary-color: red;
+            --background-color: solid black;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .container {
+            display: flex;
+            background-color: var(--primary-color);
+        }
+
+        .item {
+            align-items: center;
+            justify-content: center;
+            flex: auto;
+            height: 200px;
+            width: 200px;
+            border: 2px dotted green;
+            padding: 4px;
+            margin: 23px;
+            background-color: rgb(117, 11, 11);
+            color: var(--box-color);
+
+        }
+
+        #item3 {
+background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">
+            <h1>This is heading first </h1>
+        </div>
+        <div class="item">
+            <h1>This is heading Second </h1>
+        </div>
+        <div class="item" id="item3">
+            <h1>This is heading Third </h1>
+        </div>
+        <div class="item">
+            <h1>This is heading Fourth </h1>
+        </div>
+    </div>
+</body>
+
+</html>
